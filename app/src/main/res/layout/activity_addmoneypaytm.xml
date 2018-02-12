@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+
+    android:id="@+id/relativeMain"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbarcolor"
+            android:minHeight="?attr/actionBarSize"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <customclass.MyTextView
+                android:id="@+id/eshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="aaa"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <WebView
+        android:layout_below="@+id/appBarLayout"
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:text="Please wait..."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tV1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pB1"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <ProgressBar android:id="@+id/pB1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_centerVertical="true"
+        android:padding="2dip">
+    </ProgressBar>
+
+</RelativeLayout>

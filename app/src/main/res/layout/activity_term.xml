@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="10dp">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/contact_us_email" />
+
+
+        <TextView
+            android:id="@+id/txtContactMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:minLines="1"
+            android:textColor="@color/grey_text"
+            android:paddingRight="10dp"
+            android:text="- - - -- -- - "
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/asmaddkThis"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:background="@color/grey_bg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:padding="@dimen/spacing_middle"
+        android:paddingLeft="10dp">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/contact_us_website" />
+
+
+        <TextView
+            android:id="@+id/txtWebMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:minLines="1"
+            android:paddingRight="10dp"
+            android:text="- - - -- -- - "
+            android:textColor="@color/grey_text"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/asmaddkThis"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:background="@color/grey_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_middle"
+        android:paddingLeft="10dp">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/contact_us_phone" />
+
+
+        <TextView
+            android:id="@+id/txtCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:minLines="1"
+            android:paddingRight="10dp"
+            android:textColor="@color/grey_text"
+            android:text="- - - -- -- - "
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/asmaddkThis"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:background="@color/grey_bg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:padding="@dimen/spacing_middle"
+        android:paddingLeft="10dp">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="top"
+            android:src="@drawable/contact_us_address" />
+
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:textColor="@color/grey_text"
+            android:text="- - - -- -- - "
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtBelowName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="- - - -- -- - "
+        android:textSize="15sp" />
+</LinearLayout>

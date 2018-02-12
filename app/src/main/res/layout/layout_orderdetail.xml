@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_ID"
+        android:background="#e4e4e4"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/headerview"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+                <customclass.MyTextView
+                    android:id="@+id/row_myorder_header_tvOrderDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Date"
+                    android:textColor="@color/cattextcolour" />
+                <customclass.MyTextView
+                    android:id="@+id/orderdetaildate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    
+                    android:textColor="@color/cattextcolour" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#DEDEDE" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <customclass.MyTextView
+                    android:id="@+id/row_myorder_header_tvOrderStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Status"
+                    android:textColor="@color/cattextcolour" />
+                <customclass.MyTextView
+                    android:id="@+id/orderdetailstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/cattextcolour" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#DEDEDE" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+                <customclass.MyTextView
+                    android:id="@+id/row_myorder_header_tvSR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Amount"
+                    android:textColor="@color/cattextcolour" />
+                <customclass.MyTextView
+                    android:id="@+id/orderdetailamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/cattextcolour" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cattextcolour"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <customclass.MyTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cattextcolour"
+                        android:padding="15dp"
+                        android:text="Order Sent to"
+                        android:textColor="@color/navigationBarColor"
+                        android:textSize="16sp"
+
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mlarge"
+                            android:layout_height="@dimen/spacing_mlarge"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_profileicon" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/navigationBarColor"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mlarge"
+                            android:layout_height="@dimen/spacing_mlarge"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_call" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvmobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/navigationBarColor"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mlarge"
+                            android:layout_height="@dimen/spacing_mlarge"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_email" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvemailaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:background="@android:color/transparent"
+
+                            
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/navigationBarColor"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mlarge"
+                            android:layout_height="@dimen/spacing_mlarge"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_myaddress" />
+
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvorderaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:background="@android:color/transparent"
+
+                            android:maxLines="3"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/navigationBarColor"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvProductdetaillist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:layout_weight="6.5"
+                        android:text="Sub Total :"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtSubTotal"
+                        android:layout_weight="3.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:textSize="15sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:weightSum="10"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        
+                        android:textSize="15sp"
+                        android:layout_weight="6.5"
+                        android:text="Shipping Charge :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtShippingCharge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="3.5"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:weightSum="10"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        
+                        android:layout_weight="6.5"
+                        android:text="Discount :"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        
+                        android:paddingLeft="10dp"
+                        android:layout_weight="3.5"
+                        android:textSize="15sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearVedicWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:weightSum="10"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+
+                        android:layout_weight="6.5"
+                        android:text="Vedic Wallet :"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtVedicwallet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+
+                        android:paddingLeft="10dp"
+                        android:layout_weight="3.5"
+                        android:textSize="15sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearSuperWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:weightSum="10"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:layout_weight="6.5"
+                        android:text="Super Wallet :"
+                        android:textSize="15sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtSuperwallet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+
+                        android:paddingLeft="10dp"
+                        android:layout_weight="3.5"
+                        android:textSize="15sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="10"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        
+                        android:layout_weight="6.5"
+                        android:text="Grand Total :"
+                        android:textSize="17sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtGrandTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        android:layout_weight="3.5"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llExchangeTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="10"
+                    android:gravity="right"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal">
+
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:layout_weight="6.5"
+                        android:text="Exchange Total :"
+                        android:textSize="17sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtExchangeTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        android:layout_weight="3.5"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp"
+                        android:text="- - - - - - "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/navigationBarColor"  />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

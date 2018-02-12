@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Vedic Fashion</string>
+
+    <string name="signup"><b><u>Sign up Now</u></b></string>
+
+    <string name="signin"><u><b>Sign in</b></u></string>
+    <string name="tandc"><u>terms &amp; conditions</u></string>
+
+    <string name="nodata">No data Found.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="rs">\u20B9</string>
+    <string name="Rs">\u20B9</string>
+    <string name="facebook_app_id">239235569947391</string>
+    <string name="string_plzwait">Please wait…</string>
+    <string name="string_nointernet">No internet available</string>
+    <string name="version_code">v %s</string>
+    <string name="str_common_LogOut">Do you want to logout ?</string>
+    <string name="str_common_TakeCamera">Take picture using Camera</string>
+    <string name="str_common_TakeGallery">Choose from Gallery</string>
+    <string name="refer_line">Both you and your friend get \n referral bonus on friends first Order. \n Pro tip: Share in Whatsapp groups for \n better results</string>
+    <string name="amount_100">+ \u20B9 100</string>
+    <string name="amount_200">+ \u20B9 200</string>
+    <string name="amount_500">+ \u20B9 500</string>
+    <string name="amount_1000">+ \u20B9 1000</string>
+    <string name="add_money_from">Add money from</string>
+    <string name="continue_shopping">CONTINUE SHOPPING</string>
+    <string name="my_wallet">MY WALLET</string>
+    <string name="failorderback">Return To Add Money</string>
+    <string name="one">one</string>
+    <string name="otwo">two</string>
+</resources>

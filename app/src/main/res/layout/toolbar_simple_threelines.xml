@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/toolbarcolor"
+    android:minHeight="?attr/actionBarSize"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <customclass.MyTextView
+        android:id="@+id/eshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="aaa"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/relMyCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1.8"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

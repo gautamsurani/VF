@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbarcolor"
+            android:minHeight="?attr/actionBarSize"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <customclass.MyTextView
+                android:id="@+id/eshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="aaa"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="#757575">
+
+                <customclass.MyTextView
+                    android:id="@+id/tvWalletMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <customclass.MyTextView
+                    android:id="@+id/tv100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/rounded_corner_wallet"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/amount_100"
+                    android:textColor="@color/colorPrimary" />
+
+                <customclass.MyTextView
+                    android:id="@+id/tv200"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/rounded_corner_wallet"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/amount_200"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <customclass.MyTextView
+                    android:id="@+id/tv500"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/rounded_corner_wallet"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/amount_500"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <customclass.MyTextView
+                    android:id="@+id/tv1000"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="2.8"
+                    android:background="@drawable/rounded_corner_wallet"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/amount_1000"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f5f6">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvSignup"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <customclass.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/Rs"
+                        android:textColor="@color/grey_hard"
+                        android:textSize="@dimen/_23sdp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/divider">
+
+                        <EditText
+                            android:id="@+id/etAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="left"
+                            android:hint="Enter Amount"
+                            android:inputType="number"
+                            android:maxLength="4"
+
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/divider"
+                            android:textColorHint="@color/textSub"
+                            android:textSize="@dimen/_15sdp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <customclass.MyTextView
+                android:id="@+id/tvAddmoneyOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/add_money_from"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+
+            <ImageView
+                android:id="@+id/imgAddPayUbiz"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:src="@drawable/ic_payunew" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.9"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/btnContinueWallet"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Add Money"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/cattextcolour"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

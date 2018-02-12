@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rect"
+        android:padding="8dp"
+        android:id="@+id/ly_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+
+            />
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="11dp"
+            android:paddingLeft="11dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+
+                    android:id="@+id/title"
+                    android:maxLines="1"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Lemon peel Base ball"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="10dp"
+                    android:layout_weight="8.5"
+                    android:src="@drawable/cross"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgClose"
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/price"
+                android:textSize="@dimen/textsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 250.00"
+                android:textColor="@color/textSub"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

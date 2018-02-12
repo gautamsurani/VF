@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupbg"
+    android:padding="16dp">
+
+    <customclass.MyEditText
+        android:id="@+id/etPromocode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:hint="PinCode"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:textColor="@color/textSub" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etPromocode"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/divider" />
+
+    <customclass.MyTextView
+        android:id="@+id/btnEnterpromo"
+        android:layout_width="90dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/changebg"
+        android:gravity="center"
+        android:text="ok"
+        android:textColor="@color/White"
+        android:textSize="@dimen/text" />
+
+    <customclass.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEnterpromo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:minLines="1"
+        android:text="Tip – Verify your pincode for Delivery"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+</RelativeLayout>

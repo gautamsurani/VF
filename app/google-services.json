@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "269160869187",
+    "firebase_url": "https://vedic-fashions.firebaseio.com",
+    "project_id": "vedic-fashions",
+    "storage_bucket": "vedic-fashions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269160869187:android:bdfc9da856666267",
+        "android_client_info": {
+          "package_name": "com.vedicfashions.shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269160869187-ohnqoq432507rilrivn39h2uab4lgqig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAquJ2T6qhCQjy9FMF_G1dvQYGHHONp9T8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

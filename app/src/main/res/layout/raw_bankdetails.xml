@@ -1,0 +1,305 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/liContactUs"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="9dp"
+        android:background="#FAFAFA"
+        android:layout_height="wrap_content">
+
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <customclass.MyTextView
+            android:layout_width="0dp"
+            android:layout_weight="2.9"
+            android:text="Bank name"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/material_grey_800"
+            android:padding="1dp"
+            android:layout_margin="3dp"
+             />
+
+         <customclass.MyTextView
+             android:layout_width="wrap_content"
+             android:layout_weight="0.1"
+             android:text=":"
+             android:layout_height="wrap_content"
+             android:textColor="@color/material_grey_800"
+             android:padding="1dp"
+             android:layout_margin="3dp"
+             />
+
+        <customclass.MyTextView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/material_grey_800"
+            android:padding="1dp"
+            android:layout_margin="3dp"
+            android:id="@+id/tvBankname" />
+
+        </LinearLayout>
+
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="Account no."
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+             <customclass.MyTextView
+                 android:layout_width="wrap_content"
+                 android:layout_weight="0.1"
+                 android:text=":"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/material_grey_800"
+                 android:padding="1dp"
+                 android:layout_margin="3dp"
+                 />
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+
+
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                android:id="@+id/tvAccountnumber" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="Branch"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+
+
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                android:id="@+id/tvBranch" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="IFSC code"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                android:id="@+id/tvIfsccode" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="Branch code"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                android:id="@+id/tvbranchcode" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="Account type"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                android:id="@+id/tvAccounttype" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="2.9"
+                android:text="Address"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1"
+                android:text=":"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:layout_margin="3dp"
+                />
+            <customclass.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/material_grey_800"
+                android:padding="1dp"
+                android:maxLines="2"
+                android:layout_margin="3dp"
+                android:id="@+id/tvbankaddress" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

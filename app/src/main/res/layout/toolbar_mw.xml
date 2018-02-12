@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:weightSum="10">
+
+        <customclass.MyTextView
+            android:id="@+id/eshop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7.5"
+            android:text="Cart"
+            android:textColor="@color/cattextcolour"
+            android:textSize="@dimen/menu_text" />
+
+        <ImageView
+            android:id="@+id/searchclick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            android:src="@drawable/ic_search"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relMyCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1.8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:src="@drawable/ic_bag" />
+
+            <customclass.MyTextView
+                android:id="@+id/tvmytotalitems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bagnumberbg"
+                android:paddingBottom="1dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/cattextcolour"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+
+

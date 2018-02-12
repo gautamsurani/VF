@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="@dimen/spacing_medium"
+        app:cardElevation="@dimen/spacing_xsmall"
+        app:cardUseCompatPadding="true">
+
+        <com.balysv.materialripple.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/RippleStyleBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/asmak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dot_more_icon"
+                    android:layout_gravity="right"
+
+                    android:id="@+id/imgMore" />
+
+                <customclass.MyTextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:text=" ss"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ccc" />
+            <LinearLayout
+                android:id="@+id/asmddfak"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imvvcageView4"
+
+                    android:src="@drawable/account_phone"  />
+                <customclass.MyTextView
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=" ss"
+                    android:textSize="15sp"
+                    android:layout_marginTop="-2dp"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:gravity="top"
+                        android:id="@+id/imvvcageVidddew4"
+                        android:src="@drawable/account_myaddress"  />
+                    <customclass.MyTextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=" ss"
+                        android:textSize="14sp"
+                      android:layout_marginTop="-2dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

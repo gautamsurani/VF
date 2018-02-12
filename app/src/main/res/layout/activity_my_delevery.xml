@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"></include>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_ID"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ThisCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                card_view:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/ThisCard"
+                    android:orientation="vertical"
+
+                    android:paddingTop="10dp">
+
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:maxLines="2"
+
+                        android:paddingLeft="15dp"
+                        android:text="- - -- - - - -"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:maxLines="3"
+                        android:paddingLeft="15dp"
+
+                        android:paddingTop="10dp"
+                        android:text="- - -- - - - -"
+                        android:textSize="16sp" />
+
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtNoAddressFound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="15dp"
+                        android:text="No Address Found !"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:maxLines="2"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:text="- - -- - - - -"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/ddddsdddds"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/MAinLAyout"
+                        android:layout_marginTop="10dp"
+                        android:background="#ccc" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/MAinLAyout"
+                        android:orientation="horizontal"
+
+                        android:paddingBottom="4dp"
+                        android:weightSum="10">
+
+                        <customclass.MyTextView
+                            android:id="@+id/txtChangeAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:background="@drawable/border_right"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:padding="10dp"
+                            android:text="CHANGE ADDRESS"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/txtAddAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:padding="10dp"
+                            android:text="ADD ADDRESS"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/lyt_not_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_not_found" />
+
+                <customclass.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Product Found"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/circular_progress"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardInvoiceEmial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/asdBottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="100dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/lienrAddInvoiceEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/img_invoice_emial" />
+
+                        <customclass.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:maxLines="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Invoice"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/txtInvoiceEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Add Email ?"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtInvoiceEmailNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:maxLines="2"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!--*****Bottomcard  ***************-->
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ThisCsacffdswfard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/asdBottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="100dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/MAkeBottomView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+
+
+                        <customclass.MyTextView
+                            android:id="@+id/dwdw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:maxLines="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="PRICE DETAILS"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="10dp"
+                            android:background="#ccc" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left|center"
+
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtPricetime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+
+                                android:layout_marginTop="10dp"
+                                android:text=" "
+                                android:textSize="16sp" />
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtPriceTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:gravity="right"
+                                android:maxLines="2"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="20dp"
+                                android:text=" "
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone">
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtDelevery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+
+                                android:layout_marginTop="10dp"
+                                android:text="Delevery"
+                                android:textSize="16sp" />
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtDeleveryType"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:gravity="right"
+                                android:maxLines="2"
+                                android:text="Free"
+                                android:textColor="#3fa143"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/customdots" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp">
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:maxLines="2"
+
+                                android:text="Amount Payable"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <customclass.MyTextView
+                                android:id="@+id/txtFinalMrp"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="right"
+                                android:maxLines="2"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <customclass.MyTextView
+                            android:id="@+id/txtGreenText"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:text="You will save 10,000 on this order"
+                            android:textColor="#3fa143"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="#80000000"
+          android:gravity="center"
+
+          android:orientation="vertical">
+
+          <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/asdBottom"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              card_view:cardPreventCornerOverlap="false"
+              card_view:cardUseCompatPadding="true">
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                 android:paddingRight="10dp"
+                  android:paddingTop="30dp"
+                  android:paddingBottom="20dp"
+                  android:paddingLeft="10dp" >
+
+
+                  <customclass.MyTextView
+                      android:id="@+id/txtDelveryNotAvilbale"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:maxLines="2"
+  android:paddingBottom="10dp"
+
+                      android:text="Delivery not available at this address"
+                      android:textColor="@color/colorPrimaryDark"
+                      android:textSize="15sp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1px"
+                     android:layout_marginLeft="30dp"
+                      android:layout_marginRight="30dp"
+                      android:background="#ccc" />
+                  <customclass.MyTextView
+                      android:id="@+id/txtDelevenotChangeAddress"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="10dp"
+                      android:maxLines="2"
+  android:background="@drawable/rect"
+                      android:padding="10dp"
+                      android:text="Change Address"
+                      android:textColor="#000000"
+                      android:textSize="16sp" />
+
+
+              </LinearLayout>
+
+
+          </android.support.v7.widget.CardView>
+
+
+      </LinearLayout>
+  -->    <!--*****BOTBAR***************-->
+    <View
+        android:id="@+id/AsdlineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/asdBottom"
+        android:layout_marginTop="5dp"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/asdBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+
+            android:paddingLeft="20dp">
+
+            <customclass.MyTextView
+
+                android:id="@+id/txtMrpBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:background="@color/colorPrimary"
+            android:text="Continue"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

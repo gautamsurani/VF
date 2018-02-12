@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@drawable/toolbarbg"
+    android:id="@+id/toolbar"
+    android:contentInsetLeft="10dp"
+    android:contentInsetRight="10dp"
+    android:contentInsetStart="10dp"
+    app:contentInsetLeft="10dp"
+    app:contentInsetRight="10dp"
+    app:contentInsetStart="10dp"
+
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    >
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icHome"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <customclass.MyTextView
+            android:id="@+id/eshop"
+            android:layout_width="0dp"
+            android:layout_weight="7.5"
+            android:layout_height="wrap_content"
+            android:text="aaa"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/Tex"
+            android:textSize="@dimen/menu_text"
+            />
+
+        <ImageView
+            android:id="@+id/searchclick"
+            android:layout_toRightOf="@+id/eshop"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_gravity="right"
+            android:padding="16dp"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
+
+

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cattextcolour"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/linearUserDetail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@color/droverbackground"
+        android:gravity="left|center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <customclass.MyRoundImageview
+            android:id="@+id/myroundimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/app_logo_big"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/myroundimage"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customclass.MyTextView
+                android:id="@+id/txtUserNameHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/cattextcolour"
+                android:textSize="15dp" />
+
+            <customclass.MyTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:paddingTop="5dp"
+                android:text="Sign In"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <customclass.MyTextView
+                android:id="@+id/txtUserMobileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/cattextcolour"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/nextlist"
+            android:tint="@color/White" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/droverbackground1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:src="@drawable/nextlist" />
+
+                <customclass.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:letterSpacing="0.025"
+                    android:text="Address"
+                    android:textColor="@color/cattextcolour"
+                    android:textSize="@dimen/menu_textpading" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider"
+                android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:src="@drawable/nextlist" />
+
+                <customclass.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:letterSpacing="0.025"
+                    android:text="My Orders"
+                    android:textColor="@color/cattextcolour"
+                    android:textSize="@dimen/menu_textpading" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:src="@drawable/nextlist" />
+
+                <customclass.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:letterSpacing="0.025"
+                    android:text="Cards"
+                    android:textColor="@color/cattextcolour"
+                    android:textSize="@dimen/menu_textpading" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cattextcolour"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/home" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/menu" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Categories"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_notification" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Notification"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/grey_bg" />
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderMyyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_myaccount" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="My Account"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderMyyWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/mywalletmenu" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="My Wallet"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderMyCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_mycart" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="My Cart"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderMyWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/wishlist" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="My WishList"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderMyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_myorder" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="My Order"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderRfererYourFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_refrer" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Refer Your Friend"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderAboutVedic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/about" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="About Vedic"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderContactUS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/call" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Contact US"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/call" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Help/Feedback"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderTareUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/rate" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Rate Us"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderSelleUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/side_mycart" />
+
+            <customclass.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Sell With Us"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@mipmap/logout" />
+
+            <customclass.MyTextView
+                android:id="@+id/tvLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/menu_text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

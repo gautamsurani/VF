@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+
+        <customclass.MyTextView
+            android:id="@+id/txtOrderID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:text="Amount Payable"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <customclass.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+           android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:text="Details"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+       android:layout_marginTop="5dp"
+        android:background="@color/grey_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="#FFFFFF"
+        android:weightSum="10">
+
+        <customclass.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="Status"
+        android:textSize="16sp" />
+
+        <customclass.MyTextView
+            android:id="@+id/txtStatusValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:singleLine="true"
+          android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/oredr_cancel"
+            android:layout_marginRight="5dp"
+            android:text="Amount Payable"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/grey_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:background="#FFFFFF"
+        android:weightSum="10">
+
+        <customclass.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="Shipped Date"
+            android:textSize="16sp" />
+
+        <customclass.MyTextView
+            android:id="@+id/txtShipedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:text="Amount Payable"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/grey_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="13dp"
+        android:background="#FFFFFF"
+        android:weightSum="10">
+
+        <customclass.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:text="Order Amount"
+            android:textSize="16sp" />
+
+        <customclass.MyTextView
+            android:id="@+id/txtOrderAmopunt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:layout_marginRight="5dp"
+            android:text="Amount Payable"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"
+        android:background="@color/grey_medium" />
+
+</LinearLayout>

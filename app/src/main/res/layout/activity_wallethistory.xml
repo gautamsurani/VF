@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbarcolor"
+            android:minHeight="?attr/actionBarSize"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <customclass.MyTextView
+                android:id="@+id/eshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="aaa"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/imgReferfriend"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relviewmoney"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:visibility="gone">
+
+                        <customclass.MyTextView
+                            android:id="@+id/Superwallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@drawable/info"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="  Super Wallet"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvAvailablebalsuper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21sdp" />
+
+                        <customclass.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvAvailablebal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Available Balance"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <customclass.MyTextView
+                            android:id="@+id/VedicWallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Vedic Wallet"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvAvailablebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21sdp" />
+
+                        <customclass.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvAvailablebal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Available Balance"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/hrels"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="@color/accountcolor" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/relviewmoney"
+                android:background="@color/grey_bg" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWalletHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/progressBar1"
+                android:layout_below="@+id/viewview"
+                android:background="@color/cattextcolour" />
+
+            <customclass.MyTextView
+                android:id="@+id/tvAddmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/relviewmoney"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-16dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_corner_add_wallet"
+                android:padding="@dimen/_6sdp"
+                android:text="ADD MONEY"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:id="@+id/lyt_not_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_not_found" />
+
+                <customclass.MyTextView
+                    android:id="@+id/noooderss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Transaction Found"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/circular_progress"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

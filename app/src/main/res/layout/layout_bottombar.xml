@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/botbar"
+        android:background="#dcdcdc"/>
+
+    <LinearLayout
+        android:id="@+id/botbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/liCateGory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/category"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liSale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgddHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/sale" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                >
+
+                <customclass.MyTextView
+                    android:id="@+id/txtCartCounter"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="3.5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bagnumberbg"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgMyCart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/ic_cart"
+
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/liWishList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                >
+
+                <customclass.MyTextView
+                    android:id="@+id/tvitemCounter"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="3.5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bagnumberbg"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/White"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgWishlist"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/wishlist"
+
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgOffer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/notification_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

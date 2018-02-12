@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupbg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <customclass.MyEditText
+
+        android:id="@+id/etPromocode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:textColor="@color/textSub"
+        android:textSize="@dimen/_14sdp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etPromocode"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/divider" />
+
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <customclass.MyTextView
+            android:id="@+id/btnEnterpromo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/changebg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="ok"
+
+            android:textColor="@color/White"
+            android:textSize="@dimen/_15sdp"
+
+            />
+
+    </LinearLayout>
+
+    <customclass.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnEnterpromo"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:minLines="1"
+
+        android:text="You'll receive Invoice on your email address."
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+
+</LinearLayout>

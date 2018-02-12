@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+         >
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_ID"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relbasicdetail"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <customclass.MyRoundImageview
+                    android:id="@+id/imgMyUpdateimage"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_profileicon"
+                    android:layout_alignParentTop="true">
+
+                </customclass.MyRoundImageview>
+
+                <customclass.MyTextView
+                    android:id="@+id/tvMyuname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgMyUpdateimage"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#000"
+
+                    android:textSize="@dimen/textbig"
+                    />
+
+                <customclass.MyTextView
+                    android:id="@+id/tvMyuphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgMyUpdateimage"
+                    android:layout_below="@+id/tvMyuname"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/accountcolor"
+                    android:textSize="@dimen/textbig"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relchangeinfo"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_below="@+id/relbasicdetail"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:id="@+id/liHome"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_myhome"
+                        android:id="@+id/imageView9" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ac_right" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/viewliMyHome"
+                    android:visibility="gone"
+                    android:layout_below="@+id/liHome"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"></View>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/liDashboarde"
+                    android:layout_below="@+id/viewliMyHome"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/account_dashboard"
+                        android:id="@+id/m" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DashBoard"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+
+
+
+                <View
+                    android:id="@+id/ddedd"
+                    android:layout_below="@+id/liDashboarde"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:visibility="gone"
+                    android:layout_height="1dp"></View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/liMyprofile"
+                    android:layout_below="@+id/ddedd"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_myaccount"
+                        android:id="@+id/imageView6" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+                
+                
+                
+                
+                <View
+                    android:id="@+id/viewliMyprofile"
+                    android:layout_below="@+id/liMyprofile"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"></View>
+
+
+
+                
+
+ 
+
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/viewliMyprofile"
+                    android:id="@+id/liMyOrders"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/account_order" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Orders"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewliMyInquiry"
+                    android:layout_below="@+id/liMyOrders"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/viewliMyInquiry"
+                    android:id="@+id/liMyWallet"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_wallethistory" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet History"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewliMyWallet"
+                    android:layout_below="@+id/liMyWallet"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/viewliMyWallet"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/liMyWishList"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/wishlist" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My WishList"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/viewlideactivie"
+                    android:layout_below="@+id/liMyWishList"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"></View>
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/viewlideactivie"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/liMyAddress"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/account_myaddress" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Address"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/viewliMyAddress"
+                    android:layout_below="@+id/liMyAddress"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"></View>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/viewliMyAddress"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/liMyOffers"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/account_offer" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:id="@+id/viewliMyAsdfsfddress"
+                    android:layout_below="@+id/liMyOffers"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"></View>
+
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/viewliMyAsdfsfddress"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/liDetacive"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_deactive" />
+
+                    <customclass.MyTextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deactive Account"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/menu_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/relchangeinfo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/buttoncolor"
+
+                    android:id="@+id/btnLogout"
+                    android:layout_gravity="center_horizontal|bottom" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

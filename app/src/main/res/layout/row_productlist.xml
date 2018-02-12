@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rect"
+    android:orientation="vertical"
+    android:paddingLeft="4dp">
+
+    <LinearLayout
+        android:id="@+id/productitems"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMainImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/nextlist" />
+
+            <customclass.MyTextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imgMainImg"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/discountbg"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:textSize="11sp"
+                android:scaleType="fitXY"
+                android:textColor="@color/White" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/imagFav"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@mipmap/fav_selcted" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/imgSoldOut"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/soldoutimage" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:background="#99e2e2e2" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <customclass.MyTextView
+
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Canvera Black Heel"
+                android:textColor="@color/Tex"
+                android:textSize="14dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <customclass.MyTextView
+
+                    android:id="@+id/txtMrp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="dvdsv"
+                    android:textColor="@color/navigationBarColor"
+                    android:textSize="@dimen/menu_textforteen" />
+
+                <customclass.MyTextView
+
+                    android:id="@+id/txtMrp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:maxLines="1"
+                    android:text="dvdv"
+
+                    android:textColor="@color/textSub"
+                    android:textSize="11dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

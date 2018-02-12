@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_ID">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <customclass.MyRoundImageview
+                            android:id="@+id/imgUpdateimage"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_profileicon">
+
+                        </customclass.MyRoundImageview>
+
+                        <ImageView
+                            android:id="@+id/imgChangeImage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignBottom="@+id/imgUpdateimage"
+                            android:layout_alignEnd="@+id/imgUpdateimage"
+                            android:layout_alignRight="@+id/imgUpdateimage"
+                            android:src="@drawable/ic_camera">
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etUname"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Name"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/navigationBarColor"
+                                android:textColorHint="@color/colorhint">
+
+                            </EditText>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/divider" />
+                    </LinearLayout>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etUemail"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Email address"
+                                android:inputType="none"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/navigationBarColor"
+                                android:textColorHint="@color/colorhint">
+
+                            </EditText>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/divider" />
+                    </LinearLayout>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etUphone"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Phone"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/navigationBarColor"
+                                android:textColorHint="@color/colorhint">
+
+                            </EditText>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/divider" />
+                    </LinearLayout>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnUpdateData"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="UPDATE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#FFFFFF" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

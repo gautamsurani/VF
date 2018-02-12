@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4">
+
+
+    <!--********SEARCH*********-->
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="43dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/search2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:tag="sticky">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/categoryCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        custom:cardCornerRadius="4dp"
+                        custom:contentPadding="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center|start"
+                                android:text="Shop by"
+                                android:textSize="@dimen/_8sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-2dp"
+                                android:gravity="center|start"
+                                android:text="Category"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:elevation="5dp"
+                        custom:cardCornerRadius="4dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/searchtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/searchbg"
+                            android:drawableLeft="@drawable/search"
+                            android:drawablePadding="6dp"
+                            android:elevation="5dp"
+                            android:hint="Find Products"
+                            android:lines="1"
+                            android:padding="10dp"
+                            android:tag="sticky"
+                            android:textColorHint="@color/textSub"
+                            android:textSize="@dimen/text" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--********SLIDER**********-->
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_below="@+id/search"
+                android:background="#000000">
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/mDemoSliderHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+            </RelativeLayout>
+
+
+            <customclass.MyTextView
+                android:id="@+id/txtNewArrival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banner"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="14dp"
+                android:text="- - - - - - - - - - - -"
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+            <!--********RECYCLERVIEW 1************-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNewArrival"
+                android:layout_marginTop="5dp"
+                android:elevation="1dp" />
+
+
+            <!--********RECYCLERVIEW 3************-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleOffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleNewProduct"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvReferFrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                custom:cardBackgroundColor="@color/dashboard_card"
+                custom:cardCornerRadius="0dp"
+                custom:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:padding="2dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="REFER A FRIEND"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <customclass.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="/vedicfashion"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnRefer"
+                                style="@style/Base.Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click Here"
+                                android:textAllCaps="false"
+                                android:textColor="@color/White" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--**********HORIZONTAL SCROLLVIEW  2  **********-->
+            <customclass.MyTextView
+                android:id="@+id/txtBestSelling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleOffers"
+                android:layout_marginLeft="6dp"
+                android:text="- - - - - - - - - - - -"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <!--********RECYCLERVIEW 2************-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleBestProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBestSelling"
+                android:visibility="gone" />
+
+            <!--   *RECYCLERVIEW 3 Brands********* -->
+            <TextView
+                android:id="@+id/txtTopBrands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleBestProducts"
+                android:layout_marginLeft="6dp"
+                android:text="- - - - - - - - - - - -"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleOurBrands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTopBrands"
+                android:visibility="gone" />
+
+
+            <!--   *RECYCLERVIEW   Cat 1********* -->
+            <RelativeLayout
+                android:id="@+id/linearCatOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleOurBrands"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatOne"
+                android:layout_marginTop="10dp" />
+
+            <!--   *RECYCLERVIEW   Cat 2********* -->
+
+
+            <RelativeLayout
+                android:id="@+id/linearCatTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclecatOne"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="21dp"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatTwo"
+                android:layout_marginTop="10dp" />
+
+
+            <!--   *RECYCLERVIEW    Cat 3********* -->
+
+            <RelativeLayout
+                android:id="@+id/linearCatThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclecatTwo"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="21dp"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatThree"
+                android:layout_marginTop="10dp" />
+            <!--   *RECYCLERVIEW    Cat 4********* -->
+
+            <RelativeLayout
+                android:id="@+id/linearCatFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclecatThree"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="21dp"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatFour"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/linearCatFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclecatFour"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="21dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatFive"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/linearCatSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclecatFive"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="21dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCatSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - - - - - - - - - -"
+                    android:textColor="@color/Tex"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtViewMoreCatSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_rect_shape_red"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="View All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclecatSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearCatSix"
+                android:layout_marginTop="10dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvOffers"
+                custom:cardBackgroundColor="@color/dashboard_card"
+                custom:cardCornerRadius="0dp"
+                custom:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:padding="2dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="ON FACEBOOK"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <customclass.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="/vedicfashion"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnFB"
+                                style="@style/Base.Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Like"
+                                android:textAllCaps="false"
+                                android:textColor="@color/White" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvOffers"
+                android:layout_marginTop=".5dp"
+                android:visibility="gone"
+                custom:cardBackgroundColor="@color/dashboard_card"
+                custom:cardCornerRadius="0dp"
+                custom:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:padding="2dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="ON TWITTER"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <customclass.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="/vedicfashion"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <Button
+                                style="@style/Base.Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Follow"
+                                android:textAllCaps="false"
+                                android:textColor="@color/White" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--*****BOTBAR***************-->
+
+    <include layout="@layout/layout_bottombar" />
+</RelativeLayout>

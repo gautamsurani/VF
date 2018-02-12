@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+
+    android:id="@+id/relativeMain"
+    android:fitsSystemWindows="true"
+    >
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"></include>
+    <ScrollView
+        android:layout_below="@+id/toolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/app_logo_big" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/discussion_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+
+                >
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtName"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:gravity="top|left"
+                    android:hint="Your Name"
+                    android:paddingLeft="5dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/discussivcdvon_topddic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtEmail"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:gravity="top|left"
+                    android:hint="Email Address"
+                    android:paddingLeft="5dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/discussion_topddic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtPhone"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:lines="1"
+
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:gravity="top|left"
+                    android:hint="Phone"
+                    android:paddingLeft="5dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtMsg"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:gravity="top|left"
+                    android:hint="Message"
+                    android:paddingLeft="5dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_margin="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/btnSubmitComplaint"
+                    android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

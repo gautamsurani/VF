@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeMain"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar_ID"
+        layout="@layout/toolbar_simple"></include>
+    <ScrollView
+        android:layout_below="@+id/toolbar_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lifullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <customclass.MyTextView
+
+                        android:id="@+id/tvuserfullname"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/Tex"
+                        />
+
+                    <customclass.MyEditText
+                        android:id="@+id/etuserfullname"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:paddingTop="13dp"
+
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:lines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorhint"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/liphonenu"
+                    android:layout_below="@+id/lifullname"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <customclass.MyTextView
+
+                        android:id="@+id/tvuserphonnu"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/Tex"
+                        />
+
+                    <customclass.MyEditText
+                        android:id="@+id/etuserphonnu"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:paddingTop="13dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:lines="1"
+
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorhint"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/liaddressone"
+                    android:layout_below="@+id/liphonenu"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <customclass.MyTextView
+
+                        android:id="@+id/tvuseraddressone"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address Line 1"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/Tex"
+                        />
+
+                    <customclass.MyEditText
+                        android:id="@+id/etuseraddressone"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:paddingTop="13dp"
+
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:lines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorhint"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/liaddresstwo"
+                    android:layout_below="@+id/liaddressone"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <customclass.MyTextView
+
+                        android:id="@+id/tvuseraddresstwo"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address Line 2"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/Tex"
+                        />
+
+                    <customclass.MyEditText
+                        android:id="@+id/etuseraddresstwo"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:paddingTop="13dp"
+
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:lines="1"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorhint"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/liArea"
+                    android:layout_below="@+id/liaddresstwo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <customclass.MyTextView
+
+                        android:id="@+id/tvuserArea"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/Tex"
+                        />
+
+                    <customclass.MyEditText
+                        android:id="@+id/etdArea"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:paddingTop="13dp"
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:lines="1"
+
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorhint"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/licitystate"
+                    android:layout_below="@+id/liArea"
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/liaddresscity"
+                        android:layout_below="@+id/liaddressone"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <customclass.MyTextView
+
+                            android:id="@+id/tvuseraddresscity"
+                            android:maxLines="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/Tex"
+                            />
+
+                        <customclass.MyEditText
+                            android:id="@+id/etuseraddresscity"
+                            android:textSize="@dimen/menu_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:paddingTop="13dp"
+
+                            android:textColorHint="@color/textSub"
+                            android:textColor="@color/Tex"
+                            android:background="#0000"
+                            android:lines="1"
+                            android:singleLine="true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorhint"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/liaddressstate"
+                        android:layout_below="@+id/liaddressone"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <customclass.MyTextView
+
+                            android:id="@+id/tvuseraddressstate"
+                            android:maxLines="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="State"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/Tex"
+                            />
+
+
+                        <customclass.MyTextView
+                            android:id="@+id/tvSpinnerState"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawableRight="@mipmap/downarrow"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical"
+                            android:overlapAnchor="false"
+                            android:textColor="@color/Tex"
+                            />
+
+                       <!-- <customclass.MyEditText
+                            android:id="@+id/etuseraddressstate"
+                            android:textSize="@dimen/menu_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:paddingTop="13dp"
+
+                            android:textColorHint="@color/textSub"
+                            android:textColor="@color/Tex"
+                            android:background="#0000"
+                            android:lines="1"
+                            android:singleLine="true" />-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorhint"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lizipcountry"
+                    android:layout_below="@+id/licitystate"
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/liaddresszipcode"
+                        android:layout_below="@+id/liaddressone"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <customclass.MyTextView
+
+                            android:id="@+id/tvuseraddresszipcode"
+                            android:maxLines="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pin Code"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/Tex"
+                            />
+
+                        <customclass.MyEditText
+                            android:id="@+id/etuseraddresszipcode"
+                            android:textSize="@dimen/menu_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:paddingTop="13dp"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColorHint="@color/textSub"
+                            android:textColor="@color/Tex"
+                            android:background="#0000"
+                            android:lines="1"
+                            android:singleLine="true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorhint"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/liaddressscountry"
+                        android:layout_below="@+id/liaddressone"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <customclass.MyTextView
+
+                            android:id="@+id/tvuseraddressscountry"
+                            android:maxLines="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/Tex"
+                            />
+
+                        <customclass.MyEditText
+                            android:id="@+id/etuseraddresscountry"
+                            android:textSize="@dimen/menu_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:paddingTop="13dp"
+
+                            android:textColorHint="@color/textSub"
+                            android:textColor="@color/Tex"
+                            android:background="#0000"
+                            android:lines="1"
+                            android:singleLine="true" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorhint"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Address"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/cattextcolour"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnPlaceorder" />
+
+
+
+
+</RelativeLayout>

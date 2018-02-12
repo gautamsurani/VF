@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/cattextcolour">
+
+
+    <LinearLayout
+        android:id="@+id/linee"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/liserach"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/ic_arrorright"
+                android:layout_gravity="center_vertical"
+                android:layout_height="25dp"
+                android:id="@+id/imageView" />
+        </LinearLayout>
+        <customclass.MyEditText
+            android:id="@+id/searchresult"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_height="match_parent"
+            android:hint="Search Products"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/menu_text"
+            android:singleLine="true"
+            android:textColorHint="@color/textSub"
+             android:maxLines="1"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/ic_serch_send"
+            android:layout_gravity="center_vertical"
+            android:layout_height="25dp"
+            android:id="@+id/imgSend" />
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/linee"
+        android:id="@+id/searchvie"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eeeff1"
+
+        ></View>
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/searchvie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_not_found" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Product Found"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+
+    <!--*****BOTBAR***************-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/botbar"
+        android:background="#99e2e2e2"
+
+        ></View>
+
+    <include layout="@layout/layout_bottombar"/>
+
+
+</RelativeLayout>

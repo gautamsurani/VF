@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="@dimen/spacing_medium"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="@dimen/spacing_xsmall"
+        app:cardUseCompatPadding="true">
+
+        <com.balysv.materialripple.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/RippleStyleBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp">
+
+            <LinearLayout
+                android:id="@+id/asmak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:layout_weight="4.5"
+                     >
+
+                    <RadioButton
+                        android:id="@+id/rdButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                 <customclass.MyTextView
+                     android:id="@+id/txtName"
+                     android:layout_width="match_parent"
+                     android:text="sdcsac"
+                     android:textSize="18sp"
+                     android:textColor="#000000"
+                     android:layout_height="wrap_content" />
+
+
+                    <customclass.MyTextView
+                        android:id="@+id/txtAdsdrerss"
+                        android:layout_width="match_parent"
+                        android:text="sdcsac"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content" />
+
+
+                    <customclass.MyTextView
+                        android:id="@+id/txthone"
+                        android:layout_width="match_parent"
+                        android:text="sdcsac"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:layout_weight="4" >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="Edit"
+                        android:id="@+id/btnEdit"
+                        android:background="@android:drawable/picture_frame"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
